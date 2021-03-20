@@ -1,0 +1,10 @@
+
+.videoBar{
+    width: 1200px;
+    height: 1000px;
+    background-color: antiquewhite;
+}
+.bgVideo{
+    width: 70%;
+    opacity: .5;
+}

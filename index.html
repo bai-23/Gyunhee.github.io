@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css"><!--    重置样式表-->
+    <link rel="stylesheet" href="./font/css/all.css"><!-- 图标字体库 -->
+    <link rel="stylesheet" href="./css/starAnima.css">
+    <link rel="shortcut icon" href="./index.ico" type="image/x-icon">
+<!--    <script src="js/jquery-1.12.4.js"></script>-->
+    <link rel="stylesheet" href="bs/css/bootstrap.min.css"><!--    Bs框架-->
+    <script src="bs/js/jquery.min.js"></script>  <!--  Bs框架 -->
+    <script src="bs/js/bootstrap.min.js"></script><!--    Bs框架-->
+    <!-- <script src="bs/js/docs.min.js"></script>   Bs框架 -->
+    <script type="text/javascript" src="js/index.js"></script><!--    当前页面js文件-->
+    <link rel="stylesheet" href="./css/index.css"><!--    当前页面css文件-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <title>-Gyunhee</title>
+</head>
+<body>
+    <!--顶部容器-->
+    <div class="container-fluid topBar">
+        <div class="container innerBar">
+            <nav class='navbar navbar-inverse animate__animated animate__fadeInDown'>
+<!--            商标-->
+                <div class="navbar-header">
+                    <a href="#" class='navbar-brand logo'>
+                        -GyunHee
+                    </a>
+                    <button class='navbar-toggle collapsed' data-toggle='collapse' data-target='#mynavbar'>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div id="mynavbar" class='collapse navbar-collapse'>
+                    <ul class='nav navbar-nav'>
+                        <li><a href="">学习</a></li>
+                        <li><a href="">笔记</a></li>
+                        <li><a href="">资源</a></li>
+                        <li><a href="">了解我</a></li>
+                        <li class="dropdown" id="drop">
+                            <div class="dropinner" data-toggle="dropdown">
+                                <span class="morebar">More</span> 
+                                <span class="caret"></span>
+                            </div>
+                            
+                            <ul class='dropdown-menu more'>
+                                <li><a href="https://github.com/bai-23/MyProject1.0/tree/Dev1.0">Github &nbsp;&nbsp;<i class="fab fa-github"></i></a></li>  
+                                <li><a href="https://500px.com.cn/SongJX">500PX &nbsp;&nbsp;<i class="fab fa-500px"></i></a></li>                                                        
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class='nav navbar-nav navbar-right'>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-info"></i>
+                                &nbsp;
+                                Newest
+                            </a>
+                        </li>
+                    </ul>
+
+                    <form action="" class='navbar-form navbar-right'>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="查找我的笔记">
+                        </div>
+                        <div class="form-group">
+                            <button class='btn'><span class='glyphicon glyphicon-search'></span></button>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- 弹出框 -->
+    <div id="mymodal" class='modal fade'>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="close" data-dismiss='modal'>&times;</div>
+                    <h3>您需要的加入条件有：</h3>		
+                </div>
+                <div class="modal-body">
+                    <!-- <h4></h4>	 -->
+                    <p>
+                        <i class="fas fa-exclamation-circle"></i>
+                            <span>饱满的热情，积极的心态。</span>
+                    </p>
+                    <p>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span>饱满的热情，积极的心态。</span> 
+                    </p>
+                    <p>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span>饱满的热情，积极的心态。</span> 
+                    </p>
+                    <p>（Ps: 确实）</p>
+                    <div class="heart-loading">
+                        <ul id="star">
+                            <li id="starli" class="line-1" style="--index: 1"></li>
+                            <li id="starli" class="line-2" style="--index: 2"></li>
+                            <li id="starli" class="line-3" style="--index: 3"></li>
+                            <li id="starli" class="line-4" style="--index: 4"></li>
+                            <li id="starli" class="line-5" style="--index: 5"></li>
+                            <li id="starli" class="line-6" style="--index: 6"></li>
+                            <li id="starli" class="line-7" style="--index: 7"></li>
+                            <li id="starli" class="line-8" style="--index: 8"></li>
+                            <li id="starli" class="line-9" style="--index: 9"></li>
+                        </ul>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button class='btn btn-primary save now'>立即加入</button>
+                    <button class='btn btn-default after1' data-dismiss='modal'>等会儿加入</button>
+                </div>
+            </div>
+        </div>	
+    </div>
+    <!--主体部分-->
+    <div class="mainBar">
+        <!-- 内部容器-->
+        <div class="container innerBar">
+
+            <div class="row">
+                <!-- 顶部logo -->
+                <div class="col-lg-12 toplogo">
+                    <div class="container">
+                        <span>
+                            House of -GyunHee <code class='text-warning'><i class="fas fa-signature"></i></code>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container innerBar1">
+            <div class="row">
+                <!--上左侧折叠导航栏部分-->
+                <div class="col-md-2 left-info">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                <div class="panel-title"><a href='#one' data-toggle="collapse" data-parent='#accordion'>
+                                    最新提交
+                                    <span class='badge'>1</span>
+                                </a></div>
+                            </div>
+                            <div id='one' class='panel-collapse collapse in'>
+                                <div class="panel-body" id='one'>
+                                    资源部火热招新中...
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a href='#two' data-toggle="collapse" data-parent='#accordion'>
+                                    学习路线
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div id='two' class='panel-collapse collapse'>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-3 check1">
+                                            <div class="window">
+                                                <img src="./img/213206-1555680726dbf2.jpg">
+                                                <img src="./img/index.jpg">
+                                                <img src="./img/index2.jpg">
+                                            </div>
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <div class="panel-title"><a href='#three' data-toggle="collapse" data-parent='#accordion'>
+                                    linux
+                                </a></div>
+                            </div>
+                            <div id='three' class='panel-collapse collapse'>
+                                <div class="panel-body">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- 中间 -->
+                <div class="col-lg-10 mainbar">
+                    <!-- 信息面板 -->
+                    <div class="panel panel-primary maininfo">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <h1>
+                                    <i class="fas fa-dollar-sign fa-spin" id="money"></i>
+                                    资源部
+                                    <!-- <i class="fas fa-hand-holding-usd" id="money"></i> -->
+                                    
+                                    <a href='#mymodal' class='btn btn-primary btn-lg' data-toggle='modal'>查看加入条件</a>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <span>
+                               链接到：<a href="" id="new">招新视频2.0.mp4</a> 
+                            </span>
+                        </div>
+                        <div class="panel-footer">
+                            <p>
+                                <video src="./sourse/new begin.mp4" id="vi" controls></video>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary maininfo">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <h1>我的仓库</h1>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <span id="new">
+                                学 无 止 境
+                            </span>
+                        </div>
+                        <div class="panel-footer">
+                            <p>
+                                项目仓库：<a href="https://github.com/bai-23/MyProject1.0/tree/Dev1.0">/MyProject1.0/tree/Dev1.0</a>
+                                
+                            </p>
+                            <p>demo仓库：<a href="https://github.com/bai-23/DailyCode1.0/tree/master/source_BASIS/SmallDemoPra">/source_BASIS/SmallDemoPra</a></p>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary maininfo">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <h1>虚位以待</h1>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <span id="new">
+                                点击跳转
+                            </span>
+                        </div>
+                        <div class="panel-footer">
+                            <p>linux is very much!linux is very much!linux is very much!linux is very much!linux is very much!linux is very much!linux is very much!linux is very much!linux is very much!</p>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary maininfo">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <h1>虚位以待</h1>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <span>
+                                点击跳转
+                            </span>
+                        </div>
+                        <div class="panel-footer">
+                            <p>linux is very much!linux is very much!linux is very much!linux is very much!linux is very much!linux is very much!linux is very much!linux is very much!linux is very much!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+    </div>
+    <!-- 页脚 -->
+    <div class="foot-bar">
+        <div class="foot">
+            <span>版权所有 熙子黒 保留一切权利 | </span>
+            <span><a href="https://beian.miit.gov.cn/#/Integrated/index">蜀ICP备2020028127号</a> </span>
+        </div>
+    </div>
+
+    <!-- 固定面板 -->
+    <div class="girlbar">
+        <div class="girl">
+            <img src="./img/l.png" alt="">
+            <div class="info">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/index.js"></script><!--    当前页面js文件-->
+</html>

@@ -1,0 +1,216 @@
+body{
+    background: url("../img/213206-1555680726dbf2.jpg") repeat-y;
+
+    background-size: contain;
+    background-clip: content-box;
+    /* height: 100%; */
+}
+/*设置顶部容器*/
+.topBar{
+    margin-top: 10px;
+}
+.topBar .innerBar .navbar{
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+}
+/*设置商标*/
+.innerBar .navbar .logo{
+    font-size: 25px;
+    color: #e3e3e3;
+    font-family: "Bookman Old Style";
+}
+/*设置导航条*/
+.navbar #mynavbar .nav li{
+    border-radius: 10px;
+}
+.navbar #mynavbar .nav #drop{
+    width: 45px;
+    height: 50px;
+    line-height: 50px;
+}
+.navbar #mynavbar .nav li a,
+.navbar #mynavbar .dropdown .dropinner {
+    color: #faf9f9;
+}
+.navbar #mynavbar .nav li:hover{
+    background-color: rgba(214, 139, 139, 0.4);
+}
+
+.navbar #mynavbar .nav li a:hover{
+    color: #fcfcfa;
+}
+
+/*导航条下拉菜单*/
+.navbar #mynavbar .dropdown .dropinner{
+    /* width: 100%;
+    height: 100%; */
+
+    
+}
+.navbar #mynavbar .dropdown .dropinner .morebar{
+    font-size: 12px;
+}
+.navbar #mynavbar .dropdown .more{
+    background: rgba(68, 67, 67, 0.3);
+    height: 70px;
+    border-radius: 5px;
+}
+.navbar #mynavbar .dropdown .more li{
+    width: 100%;
+}
+
+.navbar #mynavbar .dropdown .more li:hover a {
+    color: #0f0f0f;
+}
+
+/*设置表单样式*/
+#mynavbar form input{
+    background: rgba(217, 217, 216, 0.39);
+    border: none;
+}
+
+
+
+/*主体容器*/
+.mainBar{
+    height: 100%;
+    width: 100%;
+    /*background-color: #2aabd2;*/
+}
+.mainBar .innerBar{
+    /* height: 100%; */
+    background-color: rgba(192, 192, 192, 0.15);
+    border-radius: 5px;
+}
+
+.mainBar .innerBar .toplogo{
+    height: 150px;
+    /* background-color: #e3e3e3; */
+}
+.mainBar .innerBar .toplogo div{
+    width: 700px;
+    height: 150px;
+    margin: 0 auto;
+    /* background: #000; */
+}
+.mainBar .innerBar .toplogo div span{
+    display: inline-block;
+    height: 150px;
+    line-height: 150px;
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 100px;
+    color: rgba(124, 255, 248, 0.705);
+    background-image: linear-gradient(red yellow);
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.mainBar .innerBar .toplogo div span code{
+    font-size: 20px;
+}
+
+/*上部左侧折叠导航栏*/
+.mainBar .innerBar1 .left-info{
+    height: 600px;
+}
+.mainBar .innerBar1 .panel-group{
+    opacity: 0.8;
+    
+}
+.innerBar1 #two .panel-body{
+    width: 100%;
+    /* height: 50px; */
+    /* margin-left: 24px; */
+}
+.innerBar1 .window {
+    width: 130px;
+    height:50px;
+    overflow: hidden;
+    position: relative;
+    margin-left: -15px;
+}
+
+.innerBar1 .window img{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 130px;
+}
+
+
+/* 中间主体中间 */
+.mainBar .innerBar1{
+    height: 700px;
+    background-color: rgba(192, 192, 192, 0.15);
+    border-radius: 5px;
+}
+.mainBar .innerBar1 .row .mainbar{
+    position: relative;
+    right: 16px;
+    /* background-color: rgba(192, 192, 192, 0.3); */
+    
+}
+.innerBar1 .row .mainbar .maininfo{
+    width: 350px;
+    height: 100%;
+    background-color: rgba(192, 192, 192, 0.3);
+    float: left;
+    margin-left: 45px;
+    transition: .3s;
+}
+.innerBar1 .row .mainbar .maininfo:hover{
+    transform: scale(1.07);
+}
+#new{
+    font-size: 13px;
+    color: rgba(255, 255, 0, 0.918);
+}
+#vi{
+    width: 100%;
+}
+#money{
+    color: yellow;
+    /* font-size: 23px; */
+}
+/* 弹出框 */
+.modal-body p span{
+    color: rgb(243, 8, 8);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+/* 固定面板 */
+.girlbar{
+    position: fixed;
+    right: 0;
+    top: 340px;
+    display: none;
+}
+.girlbar .girl img{
+    width: 200px;
+    display: inline-block;
+    transition: .3s;
+}
+.girlbar .girl img:hover{
+    transform: rotate(1.5deg);
+}
+
+
+/* 页脚 */
+.foot-bar{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: #e3e3e3d7;
+}
+.foot-bar .foot{
+    margin: auto;
+}
+.foot-bar .foot span{
+    font-size: 12px;
+}
+.foot-bar .foot span a{
+    color: rgb(80, 78, 78);
+    font-size: 12px;
+}
+
